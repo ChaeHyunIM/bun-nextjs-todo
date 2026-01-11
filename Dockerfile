@@ -26,7 +26,7 @@ COPY . .
 
 # Accept DATABASE_URL as a build argument
 ARG DATABASE_URL
-ENV DATABASE_URL=${DATABASE_URL}
+ENV DATABASE_URL=$DATABASE_URL
 
 RUN bun run build
 
