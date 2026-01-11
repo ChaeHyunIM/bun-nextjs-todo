@@ -24,8 +24,6 @@ COPY . .
 # Uncomment the following line in case you want to disable telemetry during the build.
 # ENV NEXT_TELEMETRY_DISABLED=1
 
-# Accept DATABASE_URL as a build argument
-ARG DATABASE_URL
 ENV DATABASE_URL=$DATABASE_URL
 
 RUN bun run build
