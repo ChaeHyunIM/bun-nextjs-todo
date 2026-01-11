@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
+    "dev": "bun --bun next dev",
+    "build": "bun --bun next build",
+    "start": "bun --bun --sql-preconnect next start",
     "lint": "biome check",
     "format": "biome format --write",
     "db:seed": "bun run db/seed.ts"
